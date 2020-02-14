@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 
-from .extensions import db
-from .models import User, Question
+from indigitous.extensions import db
+from indigitous.models import Connections
 
 main = Blueprint('main', __name__)
 
@@ -24,10 +24,6 @@ def exchange():
 def home():
     return render_template('home.js')
 
-@main.route('/login')
-def login():
-    return render_template('login.js')
-
 @main.route('/profile')
 def profile():
     return render_template('profile.js')
@@ -35,7 +31,3 @@ def profile():
 @main.route('/setup')
 def setup():
     return render_template('setup.js')
-
-@main.route('/signup')
-def signup():
-    return render_template('signup.js')

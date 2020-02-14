@@ -1,3 +1,6 @@
+from flask_login import UserMixin
+from werkzeurg.security import generate_password_hash
+
 from .extensions import db
 
 class User(db.Model):
@@ -13,6 +16,35 @@ class User(db.Model):
     gender = db.Column(db.String(50))
     password = db.Column(db.String(100))
     tos_accepted = db.Column(db.Boolean)
+
+    connects_to = db.relationship(
+        'ConnectedTo',
+        foreign_keys='ConnectedTo.user_id',
+        backref='user_to',
+        lazy=True
+    )
+
+    connects_from = db.relationship(
+        'ConnectedFrom',
+        foreign_keys='ConnectedFrom.user_id',
+        backref='user_from',
+        lazy=True
+    )
+
+    hackathon_loc = db.relationship(
+        'Hackathon',
+        foreign_keys='Hackathon.location',
+        backref='user_id',
+        lazy=True
+    )
+
+    @property
+    def unhashed_password(self):
+        raise AttributeError('Cannot view unhashed password!')
+
+    @unhashed_password.setter
+    def hash_password(self, unhashed_password):
+        self.password = generate_password_hash(unhashed_password)
 
 class Profile(db.Model):
     bp_xfield_bio = db.Column(db.Text)
