@@ -43,7 +43,7 @@ class User(db.Model):
         raise AttributeError('Cannot view unhashed password!')
 
     @unhashed_password.setter
-    def hash_password(self, unhashed_password):
+    def unhashed_password(self, unhashed_password):
         self.password = generate_password_hash(unhashed_password)
 
 class Profile(db.Model):
