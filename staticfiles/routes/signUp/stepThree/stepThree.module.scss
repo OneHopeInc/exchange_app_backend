@@ -1,0 +1,19 @@
+@import '../../../utils/globals';
+
+.bkg {
+  display: flex;
+}
+
+.column{
+  display: flex;
+  flex-direction:column;
+  width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  margin:auto;
+  margin-bottom:40px;
+  margin-top: 20px;
+ @media screen and (max-width: $break-small) {
+   width:100%;
+  }
+}

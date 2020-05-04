@@ -1,0 +1,126 @@
+@import '../../utils/globals';
+
+.profileContainer{
+    width: 25%;
+    height:100%;
+    background-color: $lightGrey;
+    position: fixed;
+    margin-top:-100px;
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      height:33%;
+      position: absolute;
+      margin-top:-50px;
+    }
+  }
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  align-items: center;
+  margin: 110px 30px 0px 30px;
+  @media screen and (max-width: $break-small) {
+    margin: 10px 10px 0px 10px;
+
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap:nowrap;
+  align-items: center;
+  margin: 10px 30px 0px 30px;
+}
+
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap:wrap;
+  margin:0px 20px;
+  @media screen and (max-width: $break-small) {
+    display: none;
+
+  }
+}
+
+.textHolder{
+text-align: center;
+}
+
+.photoHolder{
+  width: 80px;
+  height:80px;
+  background-color: $grey;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+.smallText{
+  color:$mediumGrey;
+  font-size: $smallFont;
+  font-family: $subtitle;
+  line-height: .1rem;
+  text-align: center;
+}
+
+.paragraphRow{
+  text-align: left;
+  margin: 0px 30px;
+  @media screen and (max-width: $break-small) {
+    display: none;
+
+  }
+}
+
+.stats{
+  text-align: center;
+  padding:10px;
+  min-width: 100px;
+}
+
+.stats:last-child{
+  border-left: 1px solid $grey
+
+}
+
+.logoContainer{
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  @media screen and (max-width: $break-small) {
+    left: 10px;
+
+  }
+
+}
+
+.logo{
+  object-fit: contain;
+  width: 70px;
+  height: 70px;
+}
+
+.locationContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.locationIcon{
+  width:20px;
+}
+
+.settingsIcon{
+  width:25px;
+  position: absolute;
+  top:60px;
+  right:40px;
+}
+
+
+

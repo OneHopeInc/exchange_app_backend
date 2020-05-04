@@ -1,0 +1,104 @@
+@import '../../../utils/globals';
+
+h2{
+  color: $white;
+  line-height: 1.5em;
+  font-size: $bigFont;
+  @media screen and (max-width: $break-small) {
+  font-size: $mediumFont;
+  }
+}
+
+.flex{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.colLeft{
+flex: 2;
+background-image: url("/stories.png");
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: contain; /* Resize the background image to cover the entire container */
+color: $white;
+justify-content: center;
+align-content: center;
+@media screen and (max-width: $break-small) {
+    flex-basis: 100%;
+  }
+}
+
+
+.layer{
+  background-color: $mediumBlue;
+height: 100vh;
+opacity: .8;
+@media screen and (max-width: $break-small) {
+  height: 30vh;
+}
+}
+
+.logoContainer{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+}
+
+.logo{
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+  @media screen and (max-width: $break-small) {
+    width: 70px;
+    height:70px;
+  }
+}
+
+.textContainer{
+  width: 25%;
+  position:absolute; 
+  top:50%; 
+  left:10%; 
+  transform:translate(-10%, -50%); 
+  @media screen and (max-width: $break-small) {
+    width: 90%;
+    position:absolute; 
+    text-align: center;
+    top:150px;
+    margin: 0 20px;
+  }
+}
+
+.colRight{
+flex: 3;
+background-color: $white;
+justify-content: center;
+text-align: center;
+margin: auto;
+@media screen and (max-width: $break-small) {
+    flex-basis: 100%;
+  }
+}
+
+
+.backBtn{
+  text-align: left;
+  margin-left: 20px;
+  color: $orange;
+  i{
+    font-size: 30px;
+    margin-left: 10px;
+
+  }
+  p{
+    font-size: $smallFont;
+  }
+
+  &:hover{
+    color: $plum;
+  }
+
+}
+

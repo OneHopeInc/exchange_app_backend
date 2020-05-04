@@ -1,0 +1,106 @@
+@import '../../utils/globals';
+
+.btn{
+    background-color: $white;
+    border-radius: 25px;
+    outline: none;
+    text-transform: capitalize;
+    font-family: $paragraph;
+   
+    color: $orange
+}
+
+.btnLarge{
+    @extend .btn;
+    height: 50px;
+    display: inline-block;
+    &:hover{
+        background-color: $yellow;
+        border:none;
+
+    }
+    font-family: $paragraph;
+    font-size: $mediumFont;
+    letter-spacing: 1.5;
+    margin: 10px;
+    border: 1px solid $orange;
+    padding: 10px 40px;
+    @media screen and (max-width: $break-small) {
+        height: 40px;
+        font-size: $smallFont;
+        padding: 10px 20px;
+        margin: 5px;
+  }
+
+}
+
+.btnLarge_selected{
+@extend .btnLarge;
+background-color: $yellow;
+        border:none;
+}
+
+.btnxLarge{
+    @extend .btn;
+    height:55px;
+    width:60%;
+    margin: 10px 0;
+    &:hover{
+        background-color: $yellow;
+        border:none;
+    }
+    font-size: $mediumFont;
+    @media screen and (max-width: $break-small) {
+        height: 50px;
+        width:80%;
+        font-size: $smallFont;
+  }
+}
+
+.btnxLarge_selected{
+    @extend .btnxLarge;
+    background-color: $yellow;
+            border:none;
+    }
+    
+.btnIcon{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: $white;
+    border: 1px solid $grey;
+    color: $mediumGrey;
+    margin: 10px;
+    font-size: 20px;
+    outline: none;
+    &:hover{
+        transform: scale(1.1);
+        border: 1px solid $plum;
+        color: $plum;
+
+    }
+}
+
+
+.btnxSmall{
+    @extend .btn;
+    border: 1px solid $mediumBlue;
+    color:$mediumBlue;
+    font-size: $smallFont;
+height: 20px;
+padding: 2px 10px;
+margin: 0 2px 2px 0;
+background-color: transparent;
+}
+
+.btnRegular{
+    @extend .btn;
+    border: 1px solid $mediumBlue;
+    color:$mediumBlue;
+    font-size: $mediumFont;
+    height: 30px;
+    padding: 2px 10px;
+    margin: 10px 40px 10px 5px;
+    background-color: transparent;
+}

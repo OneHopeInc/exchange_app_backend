@@ -1,0 +1,80 @@
+@import '../../utils/globals';
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  margin:auto;
+  margin-top:20px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+}
+
+.settingsText{
+  color:$mediumBlue;
+  position: absolute;
+  right:75px;
+  &:hover{
+    padding-bottom:5px;
+    border-bottom: 2px solid $mediumBlue;
+
+}
+}
+
+.calendarColumn{
+    width:25%;
+    background-color: $lightGrey;
+    min-height: 500px;
+    border-radius: 10px;
+    margin-right:50px;
+    margin-bottom:50px;
+    padding: 15px;
+}
+
+.exchangeContainer{
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  height:40%;
+}
+.exchangeNotification{
+  color: $orange;
+  line-height: 1em;
+}
+.exchangeText{
+  color: $grey;
+  font-family: $paragraph;
+  font-weight: 700;
+  font-size: $mediumFont;
+  margin:0;
+}
+
+.exchangeIcon{
+  width:20px;
+  margin: 0 40px;
+}
+
+.row_left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap:wrap;
+  margin:auto;
+  margin-top:10px;
+  margin-right: 40px;
+}
+
+
+
+
+

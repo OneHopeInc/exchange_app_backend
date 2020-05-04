@@ -1,0 +1,71 @@
+@import '../../utils/globals';
+
+.container{
+  justify-self: center;
+  width: 70%;
+  position: relative;
+  margin-left: 27%;
+  padding-right: 20px;
+  overflow: hidden;
+  @media screen and (max-width: $break-small) {
+    width:100%;
+    margin: 65% 0 0 10px;
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap:nowrap;
+  margin:auto;
+  margin-top:50px;
+  ::-webkit-scrollbar { 
+    display: none;  /* Chrome Safari */
+}
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+  overflow-y:hidden;
+  overflow-x:scroll;
+  @media screen and (max-width: $break-small) {
+    justify-content: center;
+  }
+}
+
+.sectionHeader{
+  color:$plum;
+  text-transform: uppercase;
+  font-size: $mediumFont;
+  font-family: $title;
+}
+
+.calendarColumn{
+    width:25%;
+    min-width: 25%;
+    background-color: $lightGrey;
+    min-height: 500px;
+    border-radius: 10px;
+    margin-right:50px;
+    margin-bottom:50px;
+    padding: 15px;
+    @media screen and (max-width: $break-small) {
+      width:100%;
+      min-height: 300px;
+      height:300px;
+      overflow:scroll;
+      margin:0;
+      margin-bottom: 10px;
+    }
+    
+}
+
+.calendarColumn_next{
+  @extend .calendarColumn;
+  background-color: $mediumGrey;
+}
+
+
+
+
+
+

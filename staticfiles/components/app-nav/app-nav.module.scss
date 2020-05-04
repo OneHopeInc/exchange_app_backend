@@ -1,0 +1,41 @@
+@import '../../utils/globals';
+
+
+.nav{
+    background-color: transparent;
+    color: $orange;
+    padding: 24px 100px 35px 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top:0px;
+    @media screen and (max-width: $break-small) {
+        padding: 50px 0;
+        justify-content: space-around;
+      }
+    li{
+        list-style-type: none;
+        
+        a{
+            @include wide-text;
+            text-decoration: none;
+            color: $orange;
+            margin: 0 40px;
+            padding-top: 20px;
+            text-transform: uppercase;
+            font-size: $smallFont;
+            font-family: $title;
+            &:hover{
+                border-top: 7px solid $orange;
+            }
+        }
+    }
+}
+
+.activeNav{
+    a{
+        border-top: 7px solid $orange;
+    }
+}

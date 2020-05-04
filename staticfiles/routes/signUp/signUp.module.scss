@@ -1,0 +1,52 @@
+@import '../../utils/globals';
+
+.bkg {
+  display: flex;
+}
+
+.btnMain{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.form{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+  margin 0 auto;
+}
+
+
+.selectContainer{
+  border-radius:60px;
+  display:inline-block;
+  overflow:hidden;
+  margin: auto;
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.selectList{
+  border-radius: 25px;
+  height:55px;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: $mediumFont;
+  padding-left:40px;
+}
+
+.inputText{
+  text-align: left;
+  color: $mediumGrey;
+  font-size: $smallFont;
+  margin-bottom: 4px;
+  margin: auto;
+  width: 48%;
+  padding-left:45px;
+  padding-bottom: 5px;
+  }

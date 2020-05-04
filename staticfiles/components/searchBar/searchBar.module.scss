@@ -1,0 +1,44 @@
+@import '../../utils/globals';
+
+.searchInput{
+    width: 250px;
+    margin-bottom: 10px;
+    margin-right:80px;
+    position: relative;
+    @media screen and (max-width: $break-small) {
+        width: 200px;
+        margin-right:45px;
+      }
+    
+}
+
+.searchInputField{
+    background-color: rgba(217, 217, 214, 0.21);
+    border: none;
+    font-size: $smallFont;
+    width: 85%;
+    height: 20px;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px 30px 10px 50px;
+
+}
+
+.inputText{
+    text-align: left;
+    color: $mediumGrey;
+    font-size: $smallFont;
+    margin-left: 35px;
+    margin-bottom: 4px;
+    }
+
+    .searchIcon{
+        width: 20px;
+        position: absolute;
+        top:10px;
+        right:210px;
+        @media screen and (max-width: $break-small) {
+            top:30px;
+        right:220px;
+          }
+    }

@@ -1,0 +1,32 @@
+@import '../../utils/globals';
+
+.largeInput{
+    margin:auto;
+    width: 50%;
+    margin-bottom: 30px;
+    @media screen and (max-width: $break-small) {
+        width: 80%;
+      }
+    
+}
+
+.inputText{
+text-align: left;
+color: $mediumGrey;
+font-size: $smallFont;
+margin-left: 35px;
+margin-bottom: 4px;
+}
+
+.inputField{
+    background-color: rgba(217, 217, 214, 0.21);
+    border: none;
+    font-size: 20px;
+    width: 85%;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    padding: 10px 30px;
+}
+
+

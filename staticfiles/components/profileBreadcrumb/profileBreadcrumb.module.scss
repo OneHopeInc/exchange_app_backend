@@ -1,0 +1,51 @@
+@import '../../utils/globals';
+
+.container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 27%;
+  justify-content: space-between;
+  align-content: center;
+}
+
+
+.breadcrumb{
+  text-align: left;
+  margin-left: 20px;
+  color: $orange;
+  display: flex;
+  flex-direction: row;
+  i{
+    font-size: 30px;
+    margin-left: 10px;
+
+  }
+  h3{
+    // font-size: $mediumFont;
+    margin-top:10px;
+    margin-left:20px;
+    color: $orange;
+
+  }
+
+  &:hover{
+    color: $plum;
+  }
+}
+
+.menu{
+  margin-right:100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menuOption{
+  color:$plum;
+  border-bottom: 1.5px solid $plum;
+  cursor: pointer;
+  margin-left:40px;
+  &:hover{
+    background-color: $yellow;
+  }
+}
