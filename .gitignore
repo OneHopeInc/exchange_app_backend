@@ -1,6 +1,6 @@
 #wordpress csv
 indigitous.report*.csv
-
+*.csv
 #R
 .R*
 
