@@ -16,7 +16,7 @@ MarkupSafe==1.1.1
 Pillow==7.1.2
 pipenv==2018.11.26
 psycopg2==2.8.5
-Pygments==2.6.1
+Pygments==2.7.4
 pytz==2020.1
 requests==2.23.0
 sqlparse==0.3.1
