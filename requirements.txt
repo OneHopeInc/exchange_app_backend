@@ -14,7 +14,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.1
 MarkupSafe==1.1.1
 Pillow==7.1.2
-pipenv==2018.11.26
+pipenv==2022.1.8
 psycopg2==2.8.5
 Pygments==2.6.1
 pytz==2020.1
